@@ -24,9 +24,7 @@ end
 def find_comminality_in_triplet(group)
     sack1, sack2, sack3 = group
     # Set intersection
-    commons1 = sack1.to_set & sack2.to_set
-    commons2 = sack2.to_set & sack3.to_set
-    commons = commons1 & commons2
+    commons =  sack1.to_set & sack2.to_set & sack3.to_set
 
     commons.to_a[0]
 end
