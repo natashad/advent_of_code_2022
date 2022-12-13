@@ -7,7 +7,7 @@ line_1 = template_file[0].split(' ')
 line_1[-1] = day_num
 template_file[0] = line_1.join(' ')
 
-File.open('./src/12.rb', 'w') do |f|
+File.open("./src/#{day_num}.rb", 'w') do |f|
     template_file.each do |temp|
         f.write(temp)
         f.write("\n")
